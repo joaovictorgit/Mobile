@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/identificador"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/campotexto"
+        android:layout_margin="20dp"
+        android:hint="   Digite o nome do carro para ADD (ex: w12)"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadastrar"
+        android:text="Add"
+        android:background="@drawable/buttoncadastrar"
+        android:drawableLeft="@drawable/ic_add"
+        android:drawablePadding="-5dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/identificador"
+        ></androidx.appcompat.widget.AppCompatButton>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEditar"
+        android:text="Edit"
+        android:background="@drawable/buttoneditar"
+        android:drawableLeft="@drawable/ic_edit"
+        android:drawablePadding="-8dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar"
+        ></androidx.appcompat.widget.AppCompatButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/btnEditar"
+        app:layout_constraintEnd_toEndOf="@id/btnEditar"
+        app:layout_constraintTop_toBottomOf="@id/btnEditar"
+        >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            ></ListView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
