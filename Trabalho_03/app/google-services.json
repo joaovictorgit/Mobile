@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "688682846556",
+    "project_id": "trabalho03-1ee13",
+    "storage_bucket": "trabalho03-1ee13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688682846556:android:034eac0203ba7e5cdc1999",
+        "android_client_info": {
+          "package_name": "dadm.quixada.ufc.trabalho03"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688682846556-6ct538vlr65a1b4hv30gito4o5b0e4m3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDuFko-KbCeSciyGeg0IBa8-FZx5JTvZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688682846556-6ct538vlr65a1b4hv30gito4o5b0e4m3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
