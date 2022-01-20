@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dadm.quixada.ufc.projeto_itech.CadUsuario">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+
+    <EditText
+        android:id="@+id/edtNome"
+        style="@style/Edit_Text"
+        android:hint="Nome Completo"
+        android:layout_marginTop="100dp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        style="@style/Edit_Text"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@id/edtNome"
+        app:layout_constraintEnd_toEndOf="@id/edtNome"
+        app:layout_constraintTop_toBottomOf="@id/edtNome"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/edtSenha"
+        style="@style/Edit_Text"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@id/edtEmail"
+        app:layout_constraintEnd_toEndOf="@id/edtEmail"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/edtNumero"
+        style="@style/Edit_Text"
+        android:hint="Telefone"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@id/edtSenha"
+        app:layout_constraintEnd_toEndOf="@id/edtSenha"
+        app:layout_constraintTop_toBottomOf="@id/edtSenha"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/edtRua"
+        style="@style/Edit_Text_Rua"
+        android:background="@drawable/edt_rua"
+        android:layout_marginTop="12dp"
+        android:hint="Rua"
+        android:inputType="text"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="@id/edtNumero"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/edtNumero"
+        app:layout_constraintTop_toBottomOf="@id/edtNumero"></EditText>
+
+    <EditText
+        android:id="@+id/edtNumeroRua"
+        style="@style/Edit_Text_Numero"
+        android:background="@drawable/edt_rua"
+        android:layout_marginEnd="40dp"
+        android:hint="nº"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="@id/edtRua"
+        app:layout_constraintTop_toTopOf="@id/edtRua"></EditText>
+
+    <EditText
+        android:id="@+id/edtBairro"
+        style="@style/Edit_Text"
+        android:hint="Bairro"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@id/edtRua"
+        app:layout_constraintEnd_toEndOf="@id/edtRua"
+        app:layout_constraintTop_toBottomOf="@id/edtRua"
+        ></EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cadastrarUser"
+        style="@style/Button_cadastrar"
+        android:text="Cadastrar"
+        android:layout_marginLeft="160dp"
+        app:layout_constraintStart_toStartOf="@id/edtBairro"
+        app:layout_constraintEnd_toEndOf="@id/edtBairro"
+        app:layout_constraintTop_toBottomOf="@id/edtBairro"
+        ></androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

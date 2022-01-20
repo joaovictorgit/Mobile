@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dadm.quixada.ufc.projeto_itech.CadAgendamento">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintTop_toTopOf="@+id/iconePrincipal"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/iconePrincipal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_pc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/dispositivo"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Nome do dispositvo"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iconePrincipal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/iconePrincipal"
+        app:layout_constraintTop_toBottomOf="@id/iconePrincipal" />
+
+    <EditText
+        android:id="@+id/edtDispositivo"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text"
+        android:hint="  Celular"
+        app:layout_constraintEnd_toEndOf="@+id/dispositivo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dispositivo"
+        app:layout_constraintTop_toBottomOf="@+id/dispositivo"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/modelo"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Modelo do dispositvo"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edtDispositivo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edtDispositivo"
+        app:layout_constraintTop_toBottomOf="@+id/edtDispositivo" />
+
+    <EditText
+        android:id="@+id/edtModelo"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text"
+        android:hint="  Iphone X"
+        app:layout_constraintEnd_toEndOf="@+id/modelo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/modelo"
+        app:layout_constraintTop_toBottomOf="@+id/modelo"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Data"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edtModelo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edtModelo"
+        app:layout_constraintTop_toBottomOf="@+id/edtModelo" />
+
+
+    <EditText
+        android:id="@+id/edtData"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text"
+        android:hint=" 27/01/2022"
+        android:inputType="datetime"
+        app:layout_constraintEnd_toEndOf="@+id/data"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/data"
+        app:layout_constraintTop_toBottomOf="@+id/data"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtHorario"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text"
+        android:hint=" 08:00"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="@+id/data"
+        app:layout_constraintTop_toBottomOf="@+id/data"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/descricao"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Descrição do problema"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edtData"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="@+id/edtData"
+        app:layout_constraintTop_toBottomOf="@+id/edtData" />
+
+    <EditText
+        android:id="@+id/edtDescricao"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_text"
+        android:hint=" Iphone com problema"
+        app:layout_constraintEnd_toEndOf="@+id/descricao"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/descricao"
+        app:layout_constraintTop_toBottomOf="@+id/descricao" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cadAgendamento"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/btn_entrar"
+        android:text="Agendar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/edtDescricao"
+        app:layout_constraintTop_toBottomOf="@id/edtDescricao"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavugation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@id/edtDescricao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

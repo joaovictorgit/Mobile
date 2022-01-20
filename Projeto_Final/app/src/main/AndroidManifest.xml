@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dadm.quixada.ufc.bottom_navigation_view">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bottom_Navigation_View">
+        <activity
+            android:name="dadm.quixada.ufc.projeto_itech.CadUsuario"
+            android:exported="false" />
+        <activity
+            android:name="dadm.quixada.ufc.projeto_itech.CadAgendamento"
+            android:exported="false" />
+        <activity
+            android:name="dadm.quixada.ufc.projeto_itech.DadosAgendamento"
+            android:exported="false" />
+        <activity
+            android:name="dadm.quixada.ufc.projeto_itech.CadProduto"
+            android:exported="false" />
+        <activity
+            android:name="dadm.quixada.ufc.projeto_itech.ListProd"
+            android:exported="false" />
+        <activity
+            android:name="dadm.quixada.ufc.projeto_itech.UsuarioAdmin"
+            android:exported="false" />
+        <activity
+            android:name="dadm.quixada.ufc.projeto_itech.ProdutosAdm"
+            android:exported="false" />
+        <activity
+            android:name="dadm.quixada.ufc.projeto_itech.ListAgendamentos"
+            android:exported="false" />
+        <activity
+            android:name="dadm.quixada.ufc.projeto_itech.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
