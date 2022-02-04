@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Projeto_ITech</string>
+    <string-array name="produtos_cad">
+        <item>Smartphone</item>
+        <item>Notebook</item>
+        <item>Tablet</item>
+    </string-array>
+
+    <string-array name="produtos_subcategoria">
+        <item>Periférico</item>
+        <item>Armazenamento</item>
+        <item>Acessórios</item>
+    </string-array>
+
+    <string-array name="tipos_dispositivo">
+        <item>Smartphone</item>
+        <item>Tablet</item>
+        <item>Notebook</item>
+    </string-array>
+</resources>

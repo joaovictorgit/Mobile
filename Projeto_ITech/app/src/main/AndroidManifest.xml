@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dadm.quixada.ufc.projeto_itech">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Projeto_ITech">
+        <activity
+            android:name=".Perfil"
+            android:exported="false" />
+        <activity
+            android:name=".Pedido.MeusPedidos"
+            android:exported="false" />
+        <activity
+            android:name=".Agendamento.DecisaoAgendamento"
+            android:exported="false" />
+        <activity
+            android:name=".Produto.ProdutoIndividual"
+            android:exported="false" />
+        <activity
+            android:name=".Produto.Produtos"
+            android:exported="false" />
+        <activity
+            android:name=".Agendamento.MeusAgendamentos"
+            android:exported="false" />
+        <activity
+            android:name=".HomeUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".Usuario.UsuarioAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Usuario.CadUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".Agendamento.CadAgendamento"
+            android:exported="false" />
+        <activity
+            android:name=".Agendamento.DadosAgendamento"
+            android:exported="false" />
+        <activity
+            android:name=".Produto.CadProduto"
+            android:exported="false" />
+        <activity
+            android:name=".Produto.ListProd"
+            android:exported="false" />
+        <activity
+            android:name=".Mapa.Maps"
+            android:exported="false" />
+        <activity
+            android:name=".Produto.ProdutosAdm"
+            android:exported="false" />
+        <activity
+            android:name=".Agendamento.ListAgendamentos"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${GOOGLE_MAPS_API_KEY}" />
+    </application>
+
+</manifest>

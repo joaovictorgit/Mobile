@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "584087094831",
+    "project_id": "projetofinal-e5fcc",
+    "storage_bucket": "projetofinal-e5fcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584087094831:android:eeed6eb4ca83030003e8da",
+        "android_client_info": {
+          "package_name": "dadm.quixada.ufc.projeto_itech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584087094831-bmkolebfjatkcos9suud5e0o0bu4rr7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKW_kBbXZYgDmzccCOQLEXNCKdnVlIvbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "584087094831-bmkolebfjatkcos9suud5e0o0bu4rr7e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

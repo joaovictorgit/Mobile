@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dadm.quixada.ufc.projeto_itech.Produto.ListProd">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintTop_toTopOf="@+id/iconePrincipal"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/iconePrincipal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_pc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:id="@+id/container"
+        style="@style/ContainerComponents"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="@id/iconePrincipal"
+        app:layout_constraintStart_toStartOf="@id/iconePrincipal"
+        app:layout_constraintTop_toBottomOf="@+id/iconePrincipal"></View>
+
+    <ImageView
+        android:id="@+id/imgAcesso"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_filter"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"></ImageView>
+
+    <TextView
+        android:id="@+id/produtos"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Produtos"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"></TextView>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@id/produtos"
+        app:layout_constraintEnd_toEndOf="@id/produtos"
+        app:layout_constraintTop_toBottomOf="@id/produtos"
+        >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="50dp"
+            android:dividerHeight="10.0sp"
+            android:divider="@drawable/separator"
+            />
+
+    </LinearLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/produtos"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="@id/produtos"
+        app:layout_constraintTop_toBottomOf="@id/produtos" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

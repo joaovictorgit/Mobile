@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iconePrincipal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_pc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:id="@+id/container"
+        style="@style/ContainerComponents"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="@id/iconePrincipal"
+        app:layout_constraintStart_toStartOf="@id/iconePrincipal"
+        app:layout_constraintTop_toBottomOf="@+id/iconePrincipal"></View>
+
+    <EditText
+        android:id="@+id/campoEmail"
+        style="@style/Edit_Text"
+        android:drawableLeft="@drawable/ic_email"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"></EditText>
+
+    <EditText
+        android:id="@+id/campoSenha"
+        style="@style/Edit_Text"
+        android:drawableLeft="@drawable/ic_baseline_remove_red_eye_24"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/campoEmail"
+        app:layout_constraintStart_toStartOf="@id/campoEmail"
+        app:layout_constraintTop_toBottomOf="@id/campoEmail"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEntrar"
+        style="@style/Button_entrar"
+        android:text="Entrar"
+        app:layout_constraintEnd_toEndOf="@id/campoSenha"
+        app:layout_constraintStart_toStartOf="@id/campoSenha"
+        app:layout_constraintTop_toBottomOf="@id/campoSenha"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadastrar"
+        style="@style/Button_cadastrar"
+        android:text="Cadastre-se"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEntrar"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

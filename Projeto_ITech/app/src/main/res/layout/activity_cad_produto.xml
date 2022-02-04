@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dadm.quixada.ufc.projeto_itech.Produto.CadProduto">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintTop_toTopOf="@+id/iconePrincipal"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/iconePrincipal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_pc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categoria"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="-200dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/iconePrincipal"
+        app:layout_constraintStart_toStartOf="@id/iconePrincipal"
+        app:layout_constraintTop_toBottomOf="@id/iconePrincipal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subcategoria"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/iconePrincipal"
+        app:layout_constraintStart_toStartOf="@id/iconePrincipal"
+        app:layout_constraintTop_toBottomOf="@id/iconePrincipal"
+        />
+
+    <Spinner
+        android:id="@+id/SpinnerProdutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="-50dp"
+        android:background="@color/meio_cinza"
+        android:entries="@array/produtos_cad"
+        app:layout_constraintEnd_toEndOf="@id/iconePrincipal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/iconePrincipal"
+        app:layout_constraintTop_toBottomOf="@id/iconePrincipal"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/SpinnerSubCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/meio_cinza"
+        android:entries="@array/produtos_subcategoria"
+        app:layout_constraintLeft_toLeftOf="@+id/SpinnerProdutos"
+        app:layout_constraintStart_toEndOf="@+id/SpinnerProdutos"
+        app:layout_constraintTop_toBottomOf="@id/iconePrincipal"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/addImage"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Adicionar imagem"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/SpinnerProdutos"
+        app:layout_constraintEnd_toEndOf="@id/SpinnerSubCategoria"
+        app:layout_constraintTop_toBottomOf="@id/SpinnerSubCategoria"
+        />
+
+    <ImageView
+        android:id="@+id/iconImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_add_photo"
+        app:layout_constraintStart_toStartOf="@id/addImage"
+        app:layout_constraintEnd_toEndOf="@id/addImage"
+        app:layout_constraintTop_toBottomOf="@id/addImage"
+        />
+
+    <TextView
+        android:id="@+id/descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Descrição do Produto(Nome, modelos compatíveis...)"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/iconImage"
+        app:layout_constraintEnd_toEndOf="@id/iconImage"
+        app:layout_constraintTop_toBottomOf="@id/iconImage"
+        />
+
+    <EditText
+        android:id="@+id/edtDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/edit_text"
+        android:hint="Ex: Capa protetora para Iphone 11, 12, 13..."
+        app:layout_constraintEnd_toEndOf="@id/descricao"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="@id/descricao"
+        app:layout_constraintTop_toBottomOf="@id/descricao" />
+
+    <TextView
+        android:id="@+id/precoCon"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="Preço para o consumidor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/edtDescricao"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/edtDescricao"
+        app:layout_constraintTop_toBottomOf="@id/edtDescricao" />
+
+    <EditText
+        android:id="@+id/edtPreco"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text"
+        android:hint=" R$ 8,99"
+        app:layout_constraintEnd_toEndOf="@id/precoCon"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="@id/precoCon"
+        app:layout_constraintTop_toBottomOf="@id/precoCon"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/qtdCon"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="108dp"
+        android:text="Quantidade"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/descricao"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="@id/descricao"
+        app:layout_constraintTop_toBottomOf="@id/descricao" />
+
+    <EditText
+        android:id="@+id/edtQtd"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text"
+        android:hint=" 10"
+        app:layout_constraintEnd_toEndOf="@id/qtdCon"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="@id/qtdCon"
+        app:layout_constraintTop_toBottomOf="@id/qtdCon"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadProdAdmin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/btn_entrar"
+        android:text="Cadastrar"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@id/edtPreco"
+        app:layout_constraintTop_toBottomOf="@id/edtPreco"
+        tools:ignore="TextContrastCheck"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@id/btnCadProdAdmin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
